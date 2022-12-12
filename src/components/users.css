@@ -1,0 +1,118 @@
+/* 
+00455e 
+ffae00 yellow 
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+
+.header {
+    background-color: #00455e;
+    color: #ffae00;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    color: #ffae00;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.user {
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.user h2 {
+    margin: 20px;
+    color: #00455e;
+}
+
+.user button {
+    background-color: #ffae00;
+    color: #00455e;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+}
+
+.info img {
+    background-color: #ffae00;
+    border-radius: 50%;
+}
+
+.info button {
+    background-color: #ffae00;
+    color: #00455e;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.todo table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+}
+.todo table tr td, .todo table tr th{
+    border: 1px solid black;
+    padding: 3px;
+}
+tr:nth-child(2n) {
+    background-color: #ecbf5f;
+}
+tr:nth-child(2n+1) {
+    background-color: #ffe1a1;
+}
+thead tr th:nth-child(1){
+    padding: 15px;
+}
+thead tr th{
+    background-color: #00455e;
+    color: white;
+    font-size: 20px;
+}
+tbody tr td:nth-child(2){
+    text-align: center;
+}
+
+.todo button {
+    background-color: #ffae00;
+    color: #00455e;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 0;
+    position:absolute;
+    top: 0;
+    right: 50%;
+    z-index: 999;
+}
