@@ -1,0 +1,84 @@
+.users {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.user {
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.user h2 {
+    margin: 20px;
+    color: #00455e;
+}
+
+
+.user button {
+    background-color: #ffae00;
+    color: #00455e;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.info {
+    text-align: center;
+}
+
+.info img {
+    background-color: #ffae00;
+    border-radius: 50%;
+}
+
+.info a {
+    background-color: #ffae00;
+    color: #00455e;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+}
+.todo table tr td, .todo table tr th{
+    border: 1px solid black;
+    padding: 3px;
+}
+tr:nth-child(2n+1) {
+    background-color: #ecbf5f;
+}
+tr:nth-child(2n) {
+    background-color: #ffe1a1;
+}
+thead tr th:nth-child(1){
+    padding: 15px;
+}
+th {
+    background-color: #00455e;
+    color: white;
+    font-size: 20px;
+}
+tbody tr td:nth-child(2){
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+    color: #00455e;
+    margin: 10px;
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getUser } from "./redux/UserSlice";
+import { getToDoList } from "./redux/TodoSlice";
+import { BrowserRouter as Router } from "react-router-dom";
+import Accueil from "./components/Acceuil";
+import "./App.css";
+
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getUser());
+    dispatch(getToDoList());
+  }, [dispatch]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div>
+      <Accueil />
     </div>
+    </Router>
+    
   );
 }
 
